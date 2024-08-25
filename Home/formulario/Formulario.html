@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Cadastro de Estudante</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cadastro de Estudante</h2>
+
+        <form id="studentForm">
+            <!-- Informações do Estudante -->
+            <fieldset>
+                <legend>Informações do Estudante</legend>
+                <div class="campo">
+                    <label for="nomeCompleto">Nome Completo:</label>
+                    <input type="text" name="nomeCompleto" id="nomeCompleto" required>
+                </div>
+                <div class="campoDuplo box_estudante">
+                    <div class="campo">
+                        <label for="dataNasc">Data de Nascimento:</label>
+                        <input type="date" name="dataNasc" id="dataNasc" required>
+                    </div>
+                    <div class="campo">
+                        <label for="responsavel">Responsável:</label>
+                        <input type="text" name="responsavel" id="responsavel" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Informações da Escola -->
+            <fieldset>
+                <legend>Informações da Turma</legend>
+                <div class="campoDuplo box_escola">
+                    <div class="campo">
+                        <label for="escola">Escola:</label>
+                        <input type="text" name="escola" id="escola" required>
+                    </div>
+                    <div class="campo">
+                        <label for="turma">Turma:</label>
+                        <input type="text" name="turma" id="turma" required>
+                    </div>
+                </div>
+                <div class="campoDuplo box_escola">
+                    <div class="campo">
+                        <label for="professor">Professor(a):</label>
+                        <input type="text" name="professor" id="professor" required>
+                    </div>
+                    <div class="campo">
+                        <label for="turno">Turno:</label>
+                        <input type="text" name="turno" id="turno" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Endereço -->
+            <fieldset>
+                <legend>Endereço</legend>
+                <div class="campoDuplo box_endereco">
+                    <div class="campo">
+                        <label for="logradouro">Logradouro:</label>
+                        <input type="text" name="logradouro" id="logradouro" required>
+                    </div>
+                    <div class="campo">
+                        <label for="numero">Número:</label>
+                        <input type="text" name="numero" id="numero" required>
+                    </div>
+                </div>
+                <div class="campoDuplo box_endereco">
+                    <div class="campo">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro" required>
+                    </div>
+                    <div class="campo">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade" required>
+                    </div>
+                </div>
+                <div class="campoDuplo box_endereco">
+                    <div class="campo">
+                        <label for="cep">CEP:</label>
+                        <input type="text" name="cep" id="cep" required>
+                    </div>
+                    <div class="campo">
+                        <label for="estado">Estado:</label>
+                        <input type="text" name="estado" id="estado" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Botão de Envio -->
+            <button class="botao" type="submit">Cadastrar Estudante</button>
+        </form>
+    </div>
+    <script src="../formulario/formuario.js"></script>
+</body>
+
+</html>
